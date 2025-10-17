@@ -6,7 +6,6 @@ services:
     ports:
       - "${WEBUI_PORT:-7860}:7860"
     stop_signal: SIGKILL
-    tty: true
     environment:
       - CLI_ARGS=--xformers
     deploy:
